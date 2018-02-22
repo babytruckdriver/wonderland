@@ -6,4 +6,10 @@
   (println x "Hello, World!"))
 
 (foo "Name")
-;; TODO write awesome code here
+
+;; Symbols
+(def developer "Alice") ;; Variable global
+(let [developer "Alice in Wonderland" ;; Variable con ámbito temporal
+      rabbit "White Rabbit"]
+  (println developer))
+(println developer)
