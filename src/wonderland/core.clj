@@ -80,4 +80,26 @@ true
 (println af/fav-food)
 (println rf/fav-food)
 
+;; Flow control
+(true? false)
+(false? false)
+(nil? nil)
+(not true)
+(not nil) ;; true. Interesante. Nil es tratado como false.
+;; => false
+;; => true
+;; => true
+;; => false
+
+;; comparaciones
+(= :drinkme :drinkme)
+;; => true
+(= :drinkme 4)
+;; => false
+(= '(:drinkme :bottle) [:drinkme :bottle])
+;; => true
+(not= :drinkme :4)
+;; => true
+
+
 
