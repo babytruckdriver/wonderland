@@ -101,5 +101,11 @@ true
 (not= :drinkme :4)
 ;; => true
 
-
-
+;; test empty
+(empty? [:table :door :key])
+;; => false
+(empty? [])
+;; => true
+(empty? nil)
+;; => true
+(println "Cleanliness is next to godliness")
